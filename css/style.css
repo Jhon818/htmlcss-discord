@@ -23,8 +23,9 @@ header{
      width: 100px;
      height: 100%;
      left: 10vw;
+     top: 3vh;
  }
-section button{
+section > button{
     position: absolute;
     right: 150px;
     top: 30px;
@@ -52,9 +53,6 @@ section button{
        display: inline;
        padding: 20px;
    }
- 
-
- 
 
  nav li a{
      text-decoration: none;
@@ -63,15 +61,57 @@ section button{
 
  .text{
     position: absolute;
-   
-    
-
-    
+    top: 30vh;
+    left: 40vh;
+    bottom: 50vh;
+    text-align: center; 
  }
+
+ #button1{
+    border: 20px;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: oldlace;
+    font-size: 15px;
+    vertical-align: ;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#button::after{
+    content: "\2193";
+}
+
+#button2{
+    border: 20px;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
 
  header p{
      font-size: 20px;
-     transform: translate(-50%, -50%);
      padding: 10px;
      color: white;  
  }
+
+ header h3{
+    font-size: 40px;
+    padding: 10px;
+    color: white;  
+}
+main{
+    width: 300vh;
+    margin-top: 20vh;
+}
+
+.main-section img{
+    position: relative;
+    width: 100vh;
+    margin-top: 30vh;
+    vertical-align: middle;
+    
+} 
