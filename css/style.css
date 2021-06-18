@@ -76,7 +76,6 @@ section > button{
     padding: 15px;
     background-color: oldlace;
     font-size: 15px;
-    vertical-align: ;
     font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -124,6 +123,8 @@ main{
 .main-section1 {
     display: inline;
     margin-left: 100px;
+    float: left;
+    margin-bottom: 100px;
 } 
 
 .section1-first{
@@ -140,7 +141,8 @@ main{
 }
 
 .section1-second span:first-child{ 
-    font-size: 30px;
+    font-size: 30px; 
+    font-weight:bold;
 }
 
 .section1-second span:last-of-type{
@@ -175,7 +177,6 @@ main{
         padding: 10px;
         color: white;
         font-size: 15px;
-        vertical-align: ;
         font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
         transform: translate(600px , 0);
         background-color: teal;  
@@ -207,24 +208,35 @@ footer{
   display: table;
   clear: both;
 }
+/* footer */
+
+
 
 footer ul{
+    padding-top: 50px;
     float: left;
     list-style: none;
+    height: 300px;
+    width: 200px;
 }
+
+/* col */
+
+
 
 footer li:first-child{
     color: teal;
 }
 
-footer li {
-    color: white ; 
+.footer li { 
     float: left;
     margin-left: 100px;
+    padding: 10px;
 }
 
 footer a{
     text-decoration: none;
+    color: white;
 }
 
 /* form */
