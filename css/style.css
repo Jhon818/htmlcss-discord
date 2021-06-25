@@ -6,7 +6,7 @@
 
 body{
     
-    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 header{
@@ -63,8 +63,9 @@ section > button{
  
  /* button */
  .text{
-    position: absolute;
-    top: 30vh;
+    position: relative;
+    display:inline-block ;
+    top: 20vh;
     left: 40vh;
     bottom: 50vh;
     text-align: center; 
@@ -82,6 +83,8 @@ section > button{
 /* row */
 #button1::before{
     content: "\2193";
+    font-size: 20px;
+    margin-right: 5px;
 }
 /* /row */
 
@@ -95,6 +98,7 @@ section > button{
     margin-left: 10px;
     font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif; 
 }
+
 /* /button */
 
  header p{
@@ -111,87 +115,92 @@ section > button{
 
 /* sections */
 main{
+    width: 60%;
+    margin: 0% auto;
+}
+/* wave */
+/* img[src="./img/wave.svg"]{
+    
+} */
+
+.container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    float: left;
+}
+
+.container img {
+    width:50%;
+    float: left;
+    margin-right: 100px;
+}
+
+.section1-second{
+    margin-top: 20px;
+    width: 30%;
+    float: left;
+    font-size: 20px;
+}
+
+
+.section1-second span:first-child{
+    width: 100%;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.container-big{
     width: 100%;
 }
 
-.main-section{
-  position: relative;
-   width: 100%;
-  height: 100%;
-}
-
-.main-section1 {
-    display: inline;
-    margin-left: 100px;
-    float: left;
-    margin-bottom: 100px;
-} 
-
-.section1-first{
-    display: inline;
-}
-/* section 1 */
-.section1-second{
-    display: inline-block;
-    width: 20%;
-    position: relative;
-    text-align: left; 
-    bottom:100px;
-    left: 30px;
-}
-
-.section1-second span:first-child{ 
-    font-size: 30px; 
-    font-weight:bold;
-}
-
-.section1-second span:last-of-type{
-    color: grey; 
-    font-size: 20px;
-}
-/* section 1 */
-
-
-
-
-.text1{
-    position: absolute;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-}
-.text1 span{
-    position: absolute;
-    text-align: center;
-}
-
-.text-2{
-    position: relative;
-    text-align: center;
-    font-size: 25px;
-    margin-top: 100px;
-}
-
-#button3{
-        border: 20px;
-        border-radius: 30px;
-        padding: 10px;
-        color: white;
-        font-size: 15px;
-        font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
-        transform: translate(600px , 0);
-        background-color: teal;  
-        margin-bottom: 60px;
-}
-   
-div,#button3{
+.section1-second-top{
     margin-top: 30px;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.section1-second-top span:last-child{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.section-btn{
+    margin: 0% auto;
+    text-align: center;
+    width: 50%;
+    padding-bottom: 100px;
+}
+
+.section-btn span:first-child{
+font-size: 20px;
+padding-top: 30px;
+background-image: url("../img/stars.svg");
+background-size:cover;
+font-weight: bold;
+}
+
+.section-btn #button2{
+  margin-top: 30px;
+  
+}
+
+#button2{
+    background-color: royalblue;
+    padding: 10px 20px 10px 20px;
+}
+
+#button2::before{
+    content: "\2193";
+    font-size: 20px;
+    margin-right: 5px;
+
 }
 
 
-.center{
-    position: absolute;
-    top: 0;
-}
+
 
 
 footer{
@@ -200,7 +209,8 @@ footer{
     position: relative;
     height: 300px;
     background-color: rgb(53, 48, 48);
-    border-bottom: 1px solid green;
+    margin: 0% auto;
+    color: white;
 }
 
 .clearfix{
@@ -213,58 +223,75 @@ footer{
 
 
 footer ul{
-    padding-top: 50px;
+    margin-left: 50px;
     float: left;
     list-style: none;
-    height: 300px;
-    width: 200px;
+    width: 80px;
 }
+
 
 /* col */
 
-
-
-footer li:first-child{
-    color: teal;
+footer div{
+    margin: 0% auto;
 }
 
-.footer li { 
+footer div span:first-child{
+ font-size: 20px;
+ font-weight: bold;
+ color: royalblue;
+}
+
+footer div span:last-child{
+    display: block;
+    line-height: 30px;
+}
+
+ ul li:first-child{
+   color: royalblue ;
+}
+
+footer .icons i{
+    padding-right: 10px; 
+}
+
+.list{
+    padding-top:50px;
+    height: 300px;
+    width: 60%;
+}
+.div{
     float: left;
-    margin-left: 100px;
-    padding: 10px;
 }
 
-footer a{
-    text-decoration: none;
-    color: white;
+.div span:nth-child(2){
+    display: block;
+}
+
+.icons span{
+    display: inline;
 }
 
 /* form */
-[value="Registrati"]{
-    position: absolute;
-    border: 20px;
-    border-radius: 30px;
-    padding: 10px;
-    color: white;
-    font-size: 15px;
-    vertical-align: ;
-    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
-    right: 5%;
-    bottom: 5%;
-    background-color: teal;  
-}
 
-.footer form{
+.footer-btn{
     width: 100%;
+    background-color: rgb(53, 48, 48);
+}
+
+form{
+    padding-top: 10px;
     border-top: 1px solid green;
-    position: absolute;
-    left: 5%;
-    bottom: 5%;
-}
-.footer img{
-    position: absolute;
-    left: 5%;
-    bottom: 5%;
+    width: 60%;
+    margin: 0% auto;
 }
 
-
+form input{
+    float: right;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid royalblue;
+    font-weight: bold;
+    background-color: royalblue;
+}
