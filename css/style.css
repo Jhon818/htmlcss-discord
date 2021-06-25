@@ -141,13 +141,14 @@ main{
     width: 30%;
     float: left;
     font-size: 20px;
+    
 }
 
 
 .section1-second span:first-child{
     width: 100%;
-    font-size: 25px;
-    font-weight: bolder;
+    font-size: 35px;
+    font-weight: bolder;  
 }
 
 .container-big{
@@ -165,6 +166,7 @@ main{
     width: 100%;
     font-size: 15px;
     text-align: center;
+    font-weight: lighter;
 }
 
 .section-btn{
@@ -261,6 +263,7 @@ footer .icons i{
     width: 60%;
 }
 .div{
+    padding-right: 80px;
     float: left;
 }
 
@@ -268,7 +271,13 @@ footer .icons i{
     display: block;
 }
 
+.icons{
+    padding-top: 20px;
+    display: inline-block;
+}
+
 .icons span{
+    float: left;
     display: inline;
 }
 
@@ -277,6 +286,10 @@ footer .icons i{
 .footer-btn{
     width: 100%;
     background-color: rgb(53, 48, 48);
+}
+
+.footer-btn img{
+    height: 30px;
 }
 
 form{
